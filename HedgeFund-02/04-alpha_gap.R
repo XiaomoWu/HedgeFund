@@ -3,7 +3,7 @@
 ld(f.wreg.fd)
 ld(f.hfid)
 i.index <- c("股票多头", "股票多空", "股票市场中性", "多策略", "套利策略")
-alpha <- f.wreg.fd[fund.id %in% f.hfid[life >= 1 & (type.name %in% i.idx | type.name == "套利策略"), fund.id]][, { model <- lm(wret.fd ~ rm_rf + smb + hml + umd, data = .SD);
+alpha <- f.wreg.fd[fund.id %in% f.hfid[life >= 1 & (type.name %in% i.index | type.name == "套利策略"), fund.id]][, { model <- lm(wret.fd ~ rm_rf + smb + hml + umd, data = .SD);
     alpha <- summary(model)$coefficients[1, c(1, 4)];
     names(alpha) <- c("coef", "p");
     as.list(alpha)

@@ -1,0 +1,24 @@
+﻿SecurityID [证券ID] - ‘210’+9位自增长序列。如：210000000001、210000000002、………
+TradingDate [交易日期] - 以yyyy-mm-dd表示
+Symbol [交易代码] - 沪深300期权合约交易代码为IO，上证50期权合约交易代码为HO，合约代码为IO/HOYYMM-C/P-XXXX，其中YYMM为合约月份，C为看涨期权，P为看跌期权，XXXX为行权价格（单位：点）
+ExchangeCode [交易所代码] - CFFEX为中金所
+UnderlyingSecurityID [标的证券ID] - 
+UnderlyingSecuritySymbol [标的证券交易代码] - 
+ContractCode [合约编码] - 
+ShortName [合约简称] - 
+CallOrPut [认购认沽] - C为认购，P为认沽
+StrikePrice [行权价] - 
+ExerciseDate [行权日] - 以yyyy-mm-dd表示
+ClosePrice [收盘价] - 
+UnderlyingScrtClose [标的证券收盘价] - 
+RemainingTerm [剩余年限] - 交易日至行权日之间的天数(自然日)除以365
+RisklessRate [无风险利率(%)] - 定存-整存整取一年期利息
+HistoricalVolatility [历史波动率] - 见说明书附录
+ImpliedVolatility [隐含波动率] - 见说明书附录
+TheoreticalPrice [理论价格] - 
+Delta [Delta] - 见说明书附录
+Gamma [Gamma] - 见说明书附录
+Vega [Vega] - 见说明书附录
+Theta [Theta] - 见说明书附录
+Rho [Rho] - 见说明书附录
+DividendYeild [连续股息率] - 
